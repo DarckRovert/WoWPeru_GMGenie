@@ -3,6 +3,8 @@
 > **WoW Perú Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
 > Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/WoW Perú por DarckRovert
 
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+
 Suite completa de herramientas para **Game Masters** de WoW Perú sobre AzerothCore. Combina múltiples paneles (tickets, spawns, HUD, disciplina, teleports) en una interfaz unificada diseñada para la gestión eficiente del servidor.
 
 ---
