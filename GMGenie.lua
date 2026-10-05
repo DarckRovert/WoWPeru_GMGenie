@@ -14,11 +14,27 @@ end
 
 function GMGenie.sendCommand(cmd)
     if not cmd or cmd == "" then return end
-    if IsInGuild() then
-        SendChatMessage(cmd, "GUILD");
-    else
-        SendChatMessage(cmd, "SAY");
+
+    -- Despacho nativo silencioso al core CLI (Sin fugas a GUILD ni SAY)
+    local editBox = ChatFrame1EditBox or LAST_ACTIVE_CHAT_EDIT_BOX
+    if editBox and ChatEdit_SendText then
+        local prevText = editBox:GetText()
+        local prevType = editBox:GetAttribute("chatType")
+
+        editBox:SetText(cmd)
+        ChatEdit_SendText(editBox)
+
+        if prevText and prevText ~= "" then
+            editBox:SetText(prevText)
+        end
+        if prevType then
+            editBox:SetAttribute("chatType", prevType)
+        end
+        return
     end
+
+    -- Fallback defensivo únicamente si el FrameXML no está listo
+    SendChatMessage(cmd, "SAY")
 end
 
 function GMGenie.pairsByKeys(t, f)
