@@ -31,6 +31,10 @@ GMGenie.Tickets.read = {};
 GMGenie.Tickets.idToNum = {};
 
 function GMGenie.Tickets.onLoad()
+    if RegisterAddonMessagePrefix then
+        RegisterAddonMessagePrefix("GMGenie_Sync");
+        RegisterAddonMessagePrefix("GMGenie_TicketSync");
+    end
     Chronos.scheduleRepeating('ticketrefresh', 60, GMGenie.Tickets.refresh);
     GMGenie.Tickets.refresh();
     GMGenie.Tickets.done = GMGenie_SavedVars.ticketsDone;
@@ -272,7 +276,8 @@ end
 
 -- mark ticket as unread
 function GMGenie.Tickets.markAsUnread(ticketId)
-    GMGenie.Tickets.ReadTickets[ticketId] = false;
+    GMGenie.Tickets.read[ticketId] = nil;
+    GMGenie.Tickets.updateView();
 end
 
 function GMGenie.Tickets.isOpen()
@@ -371,10 +376,14 @@ function GMGenie.Tickets.displaySync()
 end
 
 function GMGenie.Tickets.sync()
-    SendAddonMessage("GMGenie_Sync", GMGenie.Tickets.currentTicket["ticketId"], "GUILD");
+    if IsInGuild and IsInGuild() then
+        SendAddonMessage("GMGenie_Sync", tostring(GMGenie.Tickets.currentTicket["ticketId"] or 0), "GUILD");
+    end
 end
 
 function GMGenie.Tickets.syncMessage(name, ticketId)
+    if not name or name == "" then return; end
+    ticketId = tonumber(ticketId) or 0;
     if UnitName("player") ~= name then
         if not (GMGenie.Tickets.syncList[name] and GMGenie.Tickets.syncList[name] == ticketId) then
             GMGenie.Tickets.syncList[name] = ticketId;
@@ -404,7 +413,9 @@ function GMGenie.Tickets.close()
     if GMGenie.Spy.currentRequest["name"] == GMGenie.Tickets.currentTicket["name"] then
         GMGenie_Spy_InfoWindow:Hide();
     end
-    SendAddonMessage("GMGenie_Sync", "0", "GUILD");
+    if IsInGuild and IsInGuild() then
+        SendAddonMessage("GMGenie_Sync", "0", "GUILD");
+    end
     Chronos.unscheduleRepeating('ticketSync');
     GMGenie_Tickets_View:Hide();
     GMGenie.Tickets.currentTicket = { ["num"] = 0, ["ticketId"] = 0, ['name'] = "" };
@@ -486,11 +497,9 @@ SlashCmdList["TICKETS"] = GMGenie.Tickets.toggle;
 
 local frame = CreateFrame("FRAME");
 frame:RegisterEvent("CHAT_MSG_ADDON");
-
-function frame:OnEvent(event, arg1)
-    if event == "CHAT_MSG_ADDON" and (arg1 == "GMGenie_TicketSync" or arg1 == "GMGenie_Sync") then
-        GMGenie.Tickets.syncMessage(arg4, arg2);
+frame:SetScript("OnEvent", function(self, event, prefix, message, channel, sender)
+    if event == "CHAT_MSG_ADDON" and (prefix == "GMGenie_TicketSync" or prefix == "GMGenie_Sync") then
+        local cleanSender = sender and sender:match("^[^-]+") or sender;
+        GMGenie.Tickets.syncMessage(cleanSender, tonumber(message) or 0);
     end
-end
-
-frame:SetScript("OnEvent", frame.OnEvent);
+end);
