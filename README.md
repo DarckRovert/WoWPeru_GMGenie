@@ -1,4 +1,4 @@
-# GMGenie — Game Master Genie para WoW Perú
+# 🇵🇪 WoW Perú — GMGenie
 
 > **WoW Perú Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
 > Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/WoW Perú por DarckRovert
@@ -60,12 +60,20 @@ GMGenie/
 └── Textures/           # Recursos gráficos
 ```
 
-## Créditos
+## Créditos y Licencia
 
-- **Autor original:** Chocochaos (GPL v3)
-- **Adaptación WoW Perú:** DarckRovert (Elnazzareno)
+- **Autor original:** Chocochaos
+- **Adaptación y Hardening WoW Perú:** DarckRovert (Elnazzareno) & WoW Perú Team
 - **Versión:** 1.0.0-AzerothCore
-- **Licencia:** GNU General Public License v3.0
+- **Licencia:** [GNU General Public License v3.0](LICENSE)
+
+---
+
+## Documentación del Ecosistema
+
+* [Ficha Técnica Oficial del Ecosistema](ECOSYSTEM_REGISTRY.md)
+* [Historial de Cambios](CHANGELOG.md)
+* [Texto Completo de la Licencia GPLv3](LICENSE)
 
 ---
 
