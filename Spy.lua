@@ -28,7 +28,7 @@ function GMGenie.Spy.spy(name)
         GMGenie.Spy.currentRequest["name"] = name;
 
         GMGenie.Spy.clearCache();
-        GMGenie.sendCommand(".pin " .. name);
+        GMGenie.sendCommand(".pinfo " .. name);
     else
         GMGenie.showGMMessage("Please enter a name or make sure you have someone targeted.");
     end

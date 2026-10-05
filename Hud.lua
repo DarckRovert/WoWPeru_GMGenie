@@ -45,8 +45,8 @@ function GMGenie.Hud.checkStatus()
     GMGenie.sendCommand(".whispers");
 
     GMGenie.Hud.waitingForPin = true;
-    GMGenie.sendCommand(".pin " .. UnitName("player"));
-    -- set status to false after a second. .pin does not
+    GMGenie.sendCommand(".pinfo " .. UnitName("player"));
+    -- set status to false after a second. .pinfo does not
     -- print anything when the player does _not_ have gm status
     Chronos.schedule(1, function()
         if not GMGenie.Hud.gm then

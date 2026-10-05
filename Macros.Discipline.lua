@@ -13,9 +13,9 @@ GMGenie.Macros.Discipline.IpBan = {};
 
 function GMGenie.Macros.Discipline.Mute.run(name, title)
     if GMGenie_SavedVars.mute[title]["announceToServer"] then
-        GMGenie.sendCommand('.name ' .. name .. ' has been muted for ' .. GMGenie_SavedVars.mute[title]["duration"] .. ' minutes. Reason: ' .. GMGenie_SavedVars.mute[title]["reason"]);
+        GMGenie.sendCommand('.nameannounce ' .. name .. ' has been muted for ' .. GMGenie_SavedVars.mute[title]["duration"] .. ' minutes. Reason: ' .. GMGenie_SavedVars.mute[title]["reason"]);
     else
-        GMGenie.sendCommand('.gmname ' .. name .. ' has been muted for ' .. GMGenie_SavedVars.mute[title]["duration"] .. ' minutes. Reason: ' .. GMGenie_SavedVars.mute[title]["reason"]);
+        GMGenie.sendCommand('.gmnameannounce ' .. name .. ' has been muted for ' .. GMGenie_SavedVars.mute[title]["duration"] .. ' minutes. Reason: ' .. GMGenie_SavedVars.mute[title]["reason"]);
     end
     GMGenie.sendCommand('.mute ' .. name .. ' ' .. GMGenie_SavedVars.mute[title]["duration"] .. ' ' .. GMGenie_SavedVars.mute[title]["reason"]);
 end
@@ -70,9 +70,9 @@ end
 
 function GMGenie.Macros.Discipline.CharBan.run(name, title)
     if GMGenie_SavedVars.charBan[title]["announceToServer"] then
-        GMGenie.sendCommand('.name ' .. name .. ' has been banned for ' .. GMGenie_SavedVars.charBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.charBan[title]["reason"]);
+        GMGenie.sendCommand('.nameannounce ' .. name .. ' has been banned for ' .. GMGenie_SavedVars.charBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.charBan[title]["reason"]);
     else
-        GMGenie.sendCommand('.gmname ' .. name .. ' has been banned for ' .. GMGenie_SavedVars.charBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.charBan[title]["reason"]);
+        GMGenie.sendCommand('.gmnameannounce ' .. name .. ' has been banned for ' .. GMGenie_SavedVars.charBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.charBan[title]["reason"]);
     end
     GMGenie.sendCommand('.ban char ' .. name .. ' ' .. GMGenie_SavedVars.charBan[title]["duration"] .. ' ' .. GMGenie_SavedVars.charBan[title]["reason"]);
 end
@@ -127,9 +127,9 @@ end
 
 function GMGenie.Macros.Discipline.AccBan.run(name, title)
     if GMGenie_SavedVars.accBan[title]["announceToServer"] then
-        GMGenie.sendCommand('.name ' .. name .. ' has been account banned for ' .. GMGenie_SavedVars.accBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.accBan[title]["reason"]);
+        GMGenie.sendCommand('.nameannounce ' .. name .. ' has been account banned for ' .. GMGenie_SavedVars.accBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.accBan[title]["reason"]);
     else
-        GMGenie.sendCommand('.gmname ' .. name .. ' has been account banned for ' .. GMGenie_SavedVars.accBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.accBan[title]["reason"]);
+        GMGenie.sendCommand('.gmnameannounce ' .. name .. ' has been account banned for ' .. GMGenie_SavedVars.accBan[title]["duration"] .. '. Reason: ' .. GMGenie_SavedVars.accBan[title]["reason"]);
     end
     GMGenie.sendCommand('.ban playeraccount ' .. name .. ' ' .. GMGenie_SavedVars.accBan[title]["duration"] .. ' ' .. GMGenie_SavedVars.accBan[title]["reason"]);
 end
@@ -198,9 +198,9 @@ function GMGenie.Macros.Discipline.IpBan.processPin(ip)
     GMGenie.Macros.Discipline.IpBan.waitingForPin = false;
 
     if GMGenie.Macros.Discipline.IpBan.announceToServer then
-        GMGenie.sendCommand('.name ' .. GMGenie.Macros.Discipline.IpBan.name .. ' has been ip banned for ' .. GMGenie.Macros.Discipline.IpBan.duration .. '. Reason: ' .. GMGenie.Macros.Discipline.IpBan.reason);
+        GMGenie.sendCommand('.nameannounce ' .. GMGenie.Macros.Discipline.IpBan.name .. ' has been ip banned for ' .. GMGenie.Macros.Discipline.IpBan.duration .. '. Reason: ' .. GMGenie.Macros.Discipline.IpBan.reason);
     end
-    GMGenie.sendCommand('.gmname ' .. GMGenie.Macros.Discipline.IpBan.name .. ' has been ip banned (' .. ip .. ') for ' .. GMGenie.Macros.Discipline.IpBan.duration .. '. Reason: ' .. GMGenie.Macros.Discipline.IpBan.reason);
+    GMGenie.sendCommand('.gmnameannounce ' .. GMGenie.Macros.Discipline.IpBan.name .. ' has been ip banned (' .. ip .. ') for ' .. GMGenie.Macros.Discipline.IpBan.duration .. '. Reason: ' .. GMGenie.Macros.Discipline.IpBan.reason);
 
     GMGenie.sendCommand('.ban ip ' .. ip .. " " .. GMGenie.Macros.Discipline.IpBan.duration .. " " .. GMGenie.Macros.Discipline.IpBan.reason);
     Chronos.unscheduleByName('ipbanprotection');
@@ -213,7 +213,7 @@ end
 
 function GMGenie.Macros.Discipline.IpBan.run(name, title)
     GMGenie.Macros.Discipline.IpBan.waitingForPin = true;
-    GMGenie.sendCommand('.pin ' .. name);
+    GMGenie.sendCommand('.pinfo ' .. name);
     GMGenie.Macros.Discipline.IpBan.name = name;
     GMGenie.Macros.Discipline.IpBan.duration = GMGenie_SavedVars.ipBan[title]["duration"];
     GMGenie.Macros.Discipline.IpBan.reason = GMGenie_SavedVars.ipBan[title]["reason"];
