@@ -664,7 +664,7 @@ if (not isBetterInstanceLoaded) then
     function Chronos.RegisterSlashCommands()
         --Needs to be able Variables load if you want to use Sky
         local chronosFunc = function(msg)
-            local _, _, seconds, command = string.find(msg, "([%d\.]+)%s+(.*)");
+            local _, _, seconds, command = string.find(msg, "([%d.]+)%s+(.*)");
             if (seconds and command) then
                 Chronos.schedule(seconds, Chronos.SendChatCommand, command);
             else
