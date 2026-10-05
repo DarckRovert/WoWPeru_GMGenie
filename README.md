@@ -42,6 +42,14 @@ Solo para cuentas GM en servidores WoW Perú.
 2. Requiere `.gm on` para acceder a los paneles.
 3. Los sub-addons de `Chronos/` se cargan automáticamente.
 
+## 💻 Comandos de Barra (Slash Commands)
+
+| Comando | Acción |
+|---|---|
+| `/gmgenie` | Alterna la visualización del panel principal de GMGenie. |
+| `/gmg` | Abreviatura rápida de apertura y cierre de la suite. |
+| `/gmg hud` | Alterna la visualización del overlay HUD de GM. |
+
 ## Variables Guardadas
 
 - `GMGenie_SavedVars` — Configuración global, layouts de paneles, macros personalizados.
@@ -66,7 +74,7 @@ GMGenie/
 
 - **Autor original:** Chocochaos
 - **Adaptación y Hardening WoW Perú:** DarckRovert (Elnazzareno) & WoW Perú Team
-- **Versión:** 1.0.0-AzerothCore
+- **Versión:** 1.3.1
 - **Licencia:** [GNU General Public License v3.0](LICENSE)
 
 ---
@@ -75,6 +83,7 @@ GMGenie/
 
 * [Ficha Técnica Oficial del Ecosistema](ECOSYSTEM_REGISTRY.md)
 * [Historial de Cambios](CHANGELOG.md)
+* [Aviso Legal y Atribución Upstream](NOTICE.md)
 * [Texto Completo de la Licencia GPLv3](LICENSE)
 
 ---
