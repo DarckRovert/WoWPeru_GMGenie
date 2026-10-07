@@ -1,5 +1,7 @@
 # 🇵🇪 WoW Perú — GMGenie
 
+[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWoWPeru_GMGenie-black?logo=github)](https://github.com/DarckRovert/WoWPeru_GMGenie)
+
 > **WoW Perú Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
 > Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/WoW Perú por DarckRovert
 
