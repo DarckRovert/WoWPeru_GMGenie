@@ -1,7 +1,7 @@
 # 🔌 Especificación Técnica y API — Wanos_GMGenie
 
 [![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWanos_GMGenie-black?logo=github)](https://github.com/DarckRovert/Wanos_GMGenie)
-[![Ecosistema](https://img.shields.io/badge/Ecosistema-WoW%20Per%C3%BA%203.3.5a-gold.svg)](https://worldofwanos.com/)
+[![Ecosistema](https://img.shields.io/badge/Ecosistema-WoW%20Per%C3%BA%203.3.5a-gold.svg)](https://projectjaina.com/)
 
 ## 📌 Resumen Arquitectónico
 Herramienta integral de soporte y administración para GMs con gestión de tickets, teletransporte, inspección silenciosa de jugadores y despacho protegido de comandos.
