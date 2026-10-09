@@ -1,13 +1,13 @@
-# 🇵🇪 WoW Perú — GMGenie
+# 🇵🇪 Project Jaina — GMGenie
 
-[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWoWPeru_GMGenie-black?logo=github)](https://github.com/DarckRovert/WoWPeru_GMGenie)
+[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWanos_GMGenie-black?logo=github)](https://github.com/DarckRovert/Wanos_GMGenie)
 
-> **WoW Perú Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
-> Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/WoW Perú por DarckRovert
+> **Project Jaina Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
+> Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/Project Jaina por DarckRovert
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
 
-Suite completa de herramientas para **Game Masters** de WoW Perú sobre AzerothCore. Combina múltiples paneles (tickets, spawns, HUD, disciplina, teleports) en una interfaz unificada diseñada para la gestión eficiente del servidor.
+Suite completa de herramientas para **Game Masters** de Project Jaina sobre AzerothCore. Combina múltiples paneles (tickets, spawns, HUD, disciplina, teleports) en una interfaz unificada diseñada para la gestión eficiente del servidor.
 
 ---
 
@@ -38,7 +38,7 @@ Suite completa de herramientas para **Game Masters** de WoW Perú sobre AzerothC
 
 ## Instalación
 
-Solo para cuentas GM en servidores WoW Perú.
+Solo para cuentas GM en servidores Project Jaina.
 
 1. Copia `GMGenie` a `Interface/AddOns/`.
 2. Requiere `.gm on` para acceder a los paneles.
@@ -75,7 +75,7 @@ GMGenie/
 ## Créditos y Licencia
 
 - **Autor original:** Chocochaos
-- **Adaptación y Hardening WoW Perú:** DarckRovert (Elnazzareno) & WoW Perú Team
+- **Adaptación y Hardening Project Jaina:** DarckRovert (Elnazzareno) & Project Jaina Team
 - **Versión:** 1.3.1
 - **Licencia:** [GNU General Public License v3.0](LICENSE)
 
@@ -90,4 +90,4 @@ GMGenie/
 
 ---
 
-*Parte del [ecosistema WoW Perú](https://github.com/DarckRovert)*
+*Parte del [ecosistema Project Jaina](https://github.com/DarckRovert)*

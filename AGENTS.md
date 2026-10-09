@@ -1,7 +1,7 @@
-# 🤖 Directrices de Ingeniería y Restricciones para Agentes IA — WoWPeru_GMGenie
+# 🤖 Directrices de Ingeniería y Restricciones para Agentes IA — Wanos_GMGenie
 
-**Addon:** `WoWPeru_GMGenie`  
-**Repositorio Oficial:** [https://github.com/DarckRovert/WoWPeru_GMGenie](https://github.com/DarckRovert/WoWPeru_GMGenie)  
+**Addon:** `Wanos_GMGenie`  
+**Repositorio Oficial:** [https://github.com/DarckRovert/Wanos_GMGenie](https://github.com/DarckRovert/Wanos_GMGenie)  
 **Motor Gráfico y Runtime:** WoW 3.3.5a WotLK (Build 12340) / Lua 5.1 (Blizzard VM)
 
 ---
