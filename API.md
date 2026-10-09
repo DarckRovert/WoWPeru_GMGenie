@@ -1,7 +1,7 @@
-# 🔌 Especificación Técnica y API — Wanos_GMGenie
+# 🔌 Especificación Técnica y API — ProjectJaina_GMGenie
 
-[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWanos_GMGenie-black?logo=github)](https://github.com/DarckRovert/Wanos_GMGenie)
-[![Ecosistema](https://img.shields.io/badge/Ecosistema-WoW%20Per%C3%BA%203.3.5a-gold.svg)](https://projectjaina.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FProjectJaina_GMGenie-black?logo=github)](https://github.com/DarckRovert/ProjectJaina_GMGenie)
+[![Ecosistema](https://img.shields.io/badge/Ecosistema-WoW%20Per%C3%BA%203.3.5a-gold.svg)](https://darckrovert.github.io/ProjectJaina_Web/)
 
 ## 📌 Resumen Arquitectónico
 Herramienta integral de soporte y administración para GMs con gestión de tickets, teletransporte, inspección silenciosa de jugadores y despacho protegido de comandos.
@@ -39,4 +39,4 @@ Herramienta integral de soporte y administración para GMs con gestión de ticke
 ## 🛠️ Buenas Prácticas de Integración
 1. Toda invocación a funciones públicas debe verificar previamente la existencia del espacio de nombres en `_G`.
 2. Las tablas de configuración deben consultarse en modo lectura sin sobreescribir valores por omisión no validados.
-3. El intercambio de datos con otros addons debe efectuarse a través del bus oficial `Wanos_Companion` o hooks de eventos estándar.
+3. El intercambio de datos con otros addons debe efectuarse a través del bus oficial `ProjectJaina_Companion` o hooks de eventos estándar.

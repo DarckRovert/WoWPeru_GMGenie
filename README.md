@@ -1,6 +1,6 @@
-# 🇵🇪 Project Jaina — GMGenie
+# ❄️ Project Jaina — GMGenie
 
-[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FWanos_GMGenie-black?logo=github)](https://github.com/DarckRovert/Wanos_GMGenie)
+[![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FProjectJaina_GMGenie-black?logo=github)](https://github.com/DarckRovert/ProjectJaina_GMGenie)
 
 > **Project Jaina Ecosystem** · WotLK 3.3.5a compatible · `Interface: 30300`  
 > Fork de [Game Master Genie](https://www.curse.com/addons/wow/game-master-genie) por Chocochaos — Adaptado para AzerothCore/Project Jaina por DarckRovert
@@ -75,7 +75,7 @@ GMGenie/
 ## Créditos y Licencia
 
 - **Autor original:** Chocochaos
-- **Adaptación y Hardening Project Jaina:** DarckRovert (Elnazzareno) & Project Jaina Team
+- **Adaptación y Hardening Project Jaina:** DarckRovert (Elnazzareno) & Antigravity (Mythos 5)
 - **Versión:** 1.3.1
 - **Licencia:** [GNU General Public License v3.0](LICENSE)
 

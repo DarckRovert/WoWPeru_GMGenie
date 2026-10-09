@@ -1,4 +1,4 @@
-# 📜 Aviso Legal y Atribución — Wanos_GMGenie
+# 📜 Aviso Legal y Atribución — ProjectJaina_GMGenie
 
 Este repositorio forma parte del conjunto de herramientas operativas de **Project Jaina - Project Jaina**.
 Contiene la suite de gestión y administración para Game Masters en clientes World of Warcraft 3.3.5a (Build 12340) sobre AzerothCore.
@@ -14,7 +14,7 @@ Contiene la suite de gestión y administración para Game Masters en clientes Wo
 
 ## 2. Adaptaciones y Hardening por Project Jaina
 * **Mantenimiento y Adaptación:** DarckRovert & Project Jaina Staff
-* **Servidor Destino:** [Project Jaina — Project Jaina](https://projectjaina.com/)
+* **Servidor Destino:** [Project Jaina — Project Jaina](https://darckrovert.github.io/ProjectJaina_Web/)
 * **Mejoras Implementadas:**
   1. Compatibilidad completa con la sintaxis de comandos de AzerothCore v1.0.0.
   2. Ajuste de módulos de teletransporte, inspección de tickets y disciplina para el entorno de juego local.
